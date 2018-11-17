@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.maurizio.appminieri2">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EasyTicket Operatori"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <tools:validation testUrl="http://ingsoftw.eu-central-1.elasticbeanstalk.com" />
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ingsoftw.eu-central-1.elasticbeanstalk.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <!-- Accesso -->
+        <activity
+            android:name=".Accesso"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="EasyTicket Operatori"
+            android:screenOrientation="portrait">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <!-- Impostazioni -->
+        <activity
+            android:name=".Impostazioni"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="Impostazioni"
+            android:screenOrientation="portrait" />
+
+        <!-- QRCODE -->
+        <activity
+            android:name=".QRCode"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="QRCode Scanner"
+            android:screenOrientation="portrait"
+            />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <!-- Info evento -->
+        <activity
+            android:name=".InfoEvento"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <!-- Info -->
+        <activity
+            android:name=".Info"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:label="Info"
+            android:screenOrientation="portrait" />
+
+        <!-- Cerca Evento -->
+        <activity android:name=".CercaEvento"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+
+    </application>
+
+</manifest>

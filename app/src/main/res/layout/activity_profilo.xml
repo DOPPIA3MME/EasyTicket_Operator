@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profilo">
+
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="358dp"
+        android:layout_height="380dp"
+        android:background="#e2f5ef"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="57dp"
+        android:text="INFORMAZIONI PERSONALI"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nomep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_marginTop="130dp"
+        android:text="NOME"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/nomeprofilo"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomep"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_marginLeft="150dp"
+        android:text="Pasquale"
+        android:textColor="#000000"
+
+        />
+
+    <TextView
+        android:id="@+id/cognomep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/nomeprofilo"
+        android:text="COGNOME"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/cognomeprofilo"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/cognomep"
+        android:text="Esposito"
+        android:textColor="#000000"
+
+        />
+
+    <TextView
+        android:id="@+id/usernamep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cognomeprofilo"
+        android:text="USERNAME"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/usernameprofilo"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_alignLeft="@+id/imageViewProfilo"
+        android:layout_below="@+id/usernamep"
+        android:text="pako"
+        android:textColor="#000000"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageViewProfilo"
+        android:layout_width="124dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-20dp"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:text="LOGOUT"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_categorie"
+            android:icon="@drawable/folder"
+            android:title="Categorie" />
+
+        <item
+            android:id="@+id/nav_cercaevento"
+            android:icon="@drawable/search"
+            android:title="Cerca evento" />
+
+    </group>
+
+    <item android:title="Consigliala ai tuoi amici">
+        <menu>
+
+
+        </menu>
+    </item>
+
+
+    <item android:title="Profilo">
+        <menu>
+
+
+
+
+        </menu>
+    </item>
+
+    <item android:title="Altro">
+        <menu>
+            <item
+                android:id="@+id/impostazioni"
+                android:icon="@drawable/impostazioni"
+                android:title="Impostazioni"
+                />
+
+            <item
+                android:id="@+id/info"
+                android:icon="@drawable/info"
+                android:title="Info"
+                />
+
+        </menu>
+    </item>
+
+</menu>

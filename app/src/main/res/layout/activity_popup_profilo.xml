@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/identificazione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDENTIFICAZIONE"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/changeprofileimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cambia immagine del profilo"
+        android:layout_below="@+id/identificazione"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        />
+
+
+</RelativeLayout>
